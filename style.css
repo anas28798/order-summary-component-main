@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'redhatdisplay';
+    src: url(font/RedHatDisplay.ttf);
+}
+
+h1 {
+    font-family: redhatdisplay;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'redhatdisplay';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    font-family: redhatdisplay;
+    font-weight: 600;
+    color: #878ba8;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.first-container {
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e8ff;
+}
+
+.first-container::before {
+    display: block;
+    content: '';
+    background-image: url(images/pattern-background-desktop.svg);
+    position: absolute;
+    background-position: bottom;
+    background-size: cover;
+    height: 500px;
+    width: 98.7%;
+    top: 9px;
+}
+
+.main-box {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px #8888888c;
+    padding: 0px 0px 20px 0px;
+    z-index: 999;
+}
+
+.main-box img {
+    width: 100%;
+}
+
+.content-box {
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.annual-plan-content {
+    background-color: #f8f9fe;
+    border-radius: 10px;
+    width: 290px;
+    display: block;
+    margin: 0 auto;
+}
+
+.annual-plan-content .row {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.annual-plan-content .col-1 {
+    width: 70px;
+    text-align: right;
+}
+
+.annual-plan-content .col-1 img {
+    width: 65%;
+}
+
+.annual-plan-content .col-2 {
+    width: 123px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.col-2 h2,
+.col-2 p {
+    margin: 0px;
+}
+
+.annual-plan-content .col-2 p {
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.annual-plan-content .col-3 {
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.annual-plan-content .col-3 a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'redhatdisplay';
+    color: #382ae1;
+    transition: 0.5s;
+}
+
+.annual-plan-content .col-3 a:hover {
+    color: #766cf1;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.buttons-box {
+    width: 290px;
+    margin: 0 auto;
+}
+
+button.proceed-btn {
+    width: 100%;
+    background-color: #382ae1;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'redhatdisplay';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    box-shadow: 0px 5px 10px #8888888c;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: 0.5s;
+}
+
+button.proceed-btn:hover {
+    background: #766cf1;
+    transition: 0.5s;
+}
+
+button.cancil-btn {
+    width: 100%;
+    background-color: transparent;
+    color: #6f78a1;
+    font-family: 'redhatdisplay';
+    border: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 0px;
+    transition: 0.5s;
+}
+
+button.cancil-btn:hover {
+    transition: 0.5s;
+    color: #000;
+}
